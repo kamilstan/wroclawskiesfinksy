@@ -1,0 +1,216 @@
+/*html {*/
+/*    box-sizing: border-box;*/
+/*}*/
+
+/**,*/
+/**::before,*/
+/**::after {*/
+/*    box-sizing: inherit;*/
+/*}*/
+
+/*body {*/
+/*    margin: 0;*/
+/*}*/
+
+
+/* Carousel */
+
+
+/* .carousel {
+    height: 95vh;
+    overflow: hidden;
+    position: relative;
+} */
+
+.carousel-inner {
+    position: relative;
+    height: 95vh;
+    /*width: 80vw;*/
+    /*margin: 10vh auto 0 auto;*/
+}
+
+
+/* .carousel-item {
+    background-position: center;
+    background-size: cover;
+} */
+
+.carousel-item img {
+    object-fit: cover;
+    /*display: block;*/
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10vh;
+    height: 60vh;
+}
+
+my-carousel .carousel-caption {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    z-index: 10;
+}
+
+@media (min-width: 576px) {
+    /* CUSTOM WIDTHS */
+    .w-sm-100 {
+        width: 100% !important;
+    }
+
+    .carousel-item img {
+        object-fit: cover;
+    }
+}
+
+@media (min-width: 768px) {
+    /* CUSTOM WIDTHS */
+    .w-md-75 {
+        width: 75% !important;
+    }
+
+    .carousel-item img {
+        height: 95vh;
+        margin-top: 0;
+    }
+
+}
+
+/*@media (min-width: 992px) {*/
+/*    !* CUSTOM WIDTHS *!*/
+/*    .w-lg-75 {*/
+/*        width: 75% !important;*/
+/*    }*/
+
+/*}*/
+
+/* Waves */
+
+.wave-container {
+    position: relative;
+    background: #FFF;
+    text-align: center;
+    overflow: hidden;
+}
+
+.wave-container > svg {
+    display: block;
+}
+
+
+/* Arrow up */
+
+p.up {
+    position: fixed;
+    bottom: 20px;
+    right: -20px;
+    transform: translatex(-100%);
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+    line-height: 30px;
+    color: black;
+    background-color: white;
+    box-shadow: 0 0 1px 1px black;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+    transition: 1s;
+    z-index: 1;
+    cursor: pointer;
+    text-align: center;
+    opacity: 0;
+}
+
+p.up:hover i {
+    transition: .2s;
+    transform: scale(1.2);
+}
+
+
+/* About me */
+
+.about-me img {
+    object-fit: cover;
+    /*height: 100vh;*/
+}
+
+/*Cats*/
+.cats-content {
+    margin-bottom: 25vh;
+}
+
+@media (min-width: 576px) {
+    .cats-content {
+        margin-bottom: 2vh;
+    }
+
+}
+
+
+/* Gallery */
+
+.gallery img {
+    object-fit: cover;
+    height: 70vh;
+    margin: 20px 0;
+}
+
+.lightbox-carousel.carousel {
+    padding: 1rem;
+    background: #ffffff7a;
+}
+
+
+.lightbox-carousel.carousel img {
+    object-fit: cover;
+}
+
+@media (max-width: 1200px) {
+    .lightbox-carousel.carousel {
+        max-height: 95vh;
+    }
+
+    .lightbox-carousel.carousel img {
+        position: static;
+        max-height: 90vh;
+    }
+
+    .lightbox-carousel.carousel .ratio::before {
+        display: inline;
+    }
+}
+
+/* Contact */
+.contact form div {
+    margin: 0 0 50px 0;
+}
+
+.contact div a {
+    /*color: none;*/
+    text-decoration: none;
+}
+
+.contact div a i {
+    font-size: 62px;
+    color: #fff;
+    /* background-color: #343a40; */
+    padding: 10px;
+    transition: .2s;
+}
+
+.contact i:hover {
+    background-color: #fff;
+    color: #343a40;
+    border-radius: 50%;
+}
+
+/*Contact form*/
+
+div.modal-dialog {
+    display: flex;
+    justify-content: center;
+}
+
+.modal-content {
+    color: #343a40;
+}
+
