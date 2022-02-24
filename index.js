@@ -1,4 +1,5 @@
 const express = require('express');
+const port = process.env.PORT || 3000;
 const {engine} = require('express-handlebars');
 const methodOverride = require('method-override');
 const {handleError} = require('./utils/errors')
@@ -27,6 +28,4 @@ app.use('/contact', contactRouter);
 
 app.use(handleError);
 
-app.listen(3000, 'localhost', () => {
-    console.log('Listening on http://localhost:3000')
-})
+app.listen(port);
