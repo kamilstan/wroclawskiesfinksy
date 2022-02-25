@@ -1,43 +1,12 @@
-/*html {*/
-/*    box-sizing: border-box;*/
-/*}*/
-
-/**,*/
-/**::before,*/
-/**::after {*/
-/*    box-sizing: inherit;*/
-/*}*/
-
-/*body {*/
-/*    margin: 0;*/
-/*}*/
-
-
 /* Carousel */
-
-
-/* .carousel {
-    height: 95vh;
-    overflow: hidden;
-    position: relative;
-} */
 
 .carousel-inner {
     position: relative;
     height: 95vh;
-    /*width: 80vw;*/
-    /*margin: 10vh auto 0 auto;*/
 }
-
-
-/* .carousel-item {
-    background-position: center;
-    background-size: cover;
-} */
 
 .carousel-item img {
     object-fit: cover;
-    /*display: block;*/
     margin-left: auto;
     margin-right: auto;
     margin-top: 10vh;
@@ -52,7 +21,6 @@ my-carousel .carousel-caption {
 }
 
 @media (min-width: 576px) {
-    /* CUSTOM WIDTHS */
     .w-sm-100 {
         width: 100% !important;
     }
@@ -63,7 +31,6 @@ my-carousel .carousel-caption {
 }
 
 @media (min-width: 768px) {
-    /* CUSTOM WIDTHS */
     .w-md-75 {
         width: 75% !important;
     }
@@ -72,16 +39,7 @@ my-carousel .carousel-caption {
         height: 95vh;
         margin-top: 0;
     }
-
 }
-
-/*@media (min-width: 992px) {*/
-/*    !* CUSTOM WIDTHS *!*/
-/*    .w-lg-75 {*/
-/*        width: 75% !important;*/
-/*    }*/
-
-/*}*/
 
 /* Waves */
 
@@ -110,7 +68,6 @@ p.up {
     line-height: 30px;
     color: black;
     background-color: white;
-    box-shadow: 0 0 1px 1px black;
     padding: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
     transition: 1s;
@@ -125,12 +82,10 @@ p.up:hover i {
     transform: scale(1.2);
 }
 
-
 /* About me */
 
 .about-me img {
     object-fit: cover;
-    /*height: 100vh;*/
 }
 
 /*Cats*/
@@ -185,14 +140,12 @@ p.up:hover i {
 }
 
 .contact div a {
-    /*color: none;*/
     text-decoration: none;
 }
 
 .contact div a i {
     font-size: 62px;
     color: #fff;
-    /* background-color: #343a40; */
     padding: 10px;
     transition: .2s;
 }
